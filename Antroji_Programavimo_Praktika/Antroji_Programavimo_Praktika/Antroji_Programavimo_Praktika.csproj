@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DB0030C-E591-4232-AD8D-238B7948F010}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Antroji_Programavimo_Praktika</RootNamespace>
+    <AssemblyName>Antroji_Programavimo_Praktika</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.27\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DESTYTOJAS.cs" />
+    <Compile Include="Destytojo_Perziuros_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojo_Perziuros_Form.Designer.cs">
+      <DependentUpon>Destytojo_Perziuros_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojo_Pridejimo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojo_Pridejimo_Form.Designer.cs">
+      <DependentUpon>Destytojo_Pridejimo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRADE.cs" />
+    <Compile Include="Grupiu_Sarasas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grupiu_Sarasas.Designer.cs">
+      <DependentUpon>Grupiu_Sarasas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainAdmino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAdmino.Designer.cs">
+      <DependentUpon>MainAdmino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDestytojo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDestytojo.Designer.cs">
+      <DependentUpon>MainDestytojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainStudento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainStudento.Designer.cs">
+      <DependentUpon>MainStudento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MY_DB.cs" />
+    <Compile Include="PazimysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PazimysForm.Designer.cs">
+      <DependentUpon>PazimysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PazimysUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PazimysUpdateForm.Designer.cs">
+      <DependentUpon>PazimysUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STUDENT.cs" />
+    <Compile Include="Studento_Pridejimo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studento_Pridejimo_Form.Designer.cs">
+      <DependentUpon>Studento_Pridejimo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studentu_Sarasas_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentu_Sarasas_Form.Designer.cs">
+      <DependentUpon>Studentu_Sarasas_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Destytojo_Perziuros_Form.resx">
+      <DependentUpon>Destytojo_Perziuros_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojo_Pridejimo_Form.resx">
+      <DependentUpon>Destytojo_Pridejimo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grupiu_Sarasas.resx">
+      <DependentUpon>Grupiu_Sarasas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainAdmino.resx">
+      <DependentUpon>MainAdmino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDestytojo.resx">
+      <DependentUpon>MainDestytojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainStudento.resx">
+      <DependentUpon>MainStudento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PazimysForm.resx">
+      <DependentUpon>PazimysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PazimysUpdateForm.resx">
+      <DependentUpon>PazimysUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Studento_Pridejimo_Form.resx">
+      <DependentUpon>Studento_Pridejimo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentu_Sarasas_Form.resx">
+      <DependentUpon>Studentu_Sarasas_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
